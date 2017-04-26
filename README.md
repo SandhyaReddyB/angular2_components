@@ -7,6 +7,7 @@ This example is for getting started with Components
 
 How to start local application using CLI
 ========================================
+Make sure to install node.js and npm if they are not already on your machine https://docs.npmjs.com/getting-started/installing-node
 http://cli.angular.io
 npm install -g @angular/cli
 ng new my-first-app
@@ -18,7 +19,6 @@ solution:
 find the process id using the port and kill it
 netstat -a -n -o
 taskkill /PID 15940 /F
-
 [or] use the other port 
 ng server --port 4700
 
@@ -27,13 +27,18 @@ create components using cli
 ng generate component servers  
 ng g c servers
 
-It creates a folder with name servers and creates all the files and also adds required import statements in app.module.ts
+It creates a folder with name servers and creates all the component files and also adds required import statements in app.module.ts
 
 Install bootstrap for styling
 -----------------------------
 To install bootstrap
 my-first-app> npm install --save bootstrap
 In angular-cli.json add ../node_modules/bootstrap/dist/css/bootstarp.min.css in styles
+
+Debugging
+-----------
+Augury https://augury.angular.io/ Chrome extension can be used for debugging Angular 2 applications
+It also helps developers to visualize the application through component trees and dependencies through injector graph
 
 What is Angular
 ==============
